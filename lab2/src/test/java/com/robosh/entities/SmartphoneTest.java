@@ -33,15 +33,6 @@ public class SmartphoneTest {
   }
 
   @Test
-  public void shouldReturnMethodsParameters() {
-    Arrays.stream(smartphone.getClass().getMethods())
-        .map(method ->
-            method.getReturnType().getName() + " " + method.getName() + " " + Arrays
-                .toString(method.getParameterTypes()))
-        .forEach(System.out::println);
-  }
-
-  @Test
   @SneakyThrows
   public void shouldIncreaseMemoryTwice() {
     for (Method method : smartphone.getClass().getMethods()) {
