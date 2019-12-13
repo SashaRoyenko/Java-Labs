@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Properties>
+    <Property name="basePath">lab9/logs</Property>
+  </Properties>
+  <Appenders>
+    <!-- Console Appender -->
+    <Console name="STDOUT" target="SYSTEM_OUT">
+      <PatternLayout
+        pattern="%-5p | %-5marker | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n"/>
+    </Console>
+
+    <!-- File Appender -->
+    <RollingFile
+      name="rollingFile"
+      fileName="${basePath}/logfile.log"
+      filePattern="${basePath}/logfile%i-%d{dd-MMM}.log"
+      ignoreExceptions="false">
+      <PatternLayout
+        pattern="%-5p | %-5marker | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n"/>
+      <Policies>
+        <OnStartupTriggeringPolicy/>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="5KB"/>
+      </Policies>
+      <DefaultRolloverStrategy max="3"/>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Logger name="com.jcg" level="debug"/>
+    <Root level="info">
+      <AppenderRef ref="STDOUT"/>
+      <AppenderRef ref="rollingFile"/>
+    </Root>
+  </Loggers>
+</Configuration>

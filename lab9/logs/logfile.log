@@ -1,0 +1,7 @@
+WARN  | ADMIN | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+WARN  | ADMIN | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+INFO  | ADMIN | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+INFO  | USER  | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+ERROR | ADMIN | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+WARN  | USER  | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+ERROR | ADMIN | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:31) - Error message

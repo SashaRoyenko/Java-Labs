@@ -15,7 +15,11 @@ public class Main {
 
   public static void main(String[] args) {
     Developer developer = getEmployee(Employee.SENIOR);
+    Developer developer1 = getEmployee(Employee.JUNIOR);
+    Developer developer2 = getEmployee(Employee.MIDDLE);
     log.info(Objects.requireNonNull(developer).doWork());
+    log.info(Objects.requireNonNull(developer1).doWork());
+    log.info(Objects.requireNonNull(developer2).doWork());
 
     Git git = new Git();
     git.addRequest("ST-1 merge");
