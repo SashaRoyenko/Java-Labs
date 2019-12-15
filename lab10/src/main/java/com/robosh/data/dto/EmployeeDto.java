@@ -1,6 +1,7 @@
 package com.robosh.data.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.robosh.data.entity.Project;
 import com.robosh.data.enums.Role;
 import java.time.LocalDate;
 import javax.persistence.Enumerated;
@@ -16,7 +17,7 @@ public class EmployeeDto {
   private String firstName;
 
   @NotBlank
-  private String secondName;
+  private String lastName;
 
   @JsonFormat(pattern = "dd.MM.yyyy")
   private LocalDate birthDate;
@@ -24,6 +25,8 @@ public class EmployeeDto {
   @Enumerated
   private Role role;
 
-  private Long projectId;
+//  private String projectName;
+
+  private Project project;
 
 }

@@ -3,6 +3,7 @@ package com.robosh.data.entity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.robosh.data.enums.Role;
 import java.time.LocalDate;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
@@ -28,7 +29,7 @@ public class Employee {
 
   @Column(name = "second_name", nullable = false)
   @NotBlank
-  private String secondName;
+  private String lastName;
 
   @Column(name = "birth_date")
   @DateTimeFormat(iso = ISO.DATE, pattern = "dd.MM.yyyy")

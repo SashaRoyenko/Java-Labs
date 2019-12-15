@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping("/project")
-@AllArgsConstructor
+//@RestController
+//@RequestMapping("/project")
+//@AllArgsConstructor
 public class ProjectController {
 
   private ProjectService projectService;

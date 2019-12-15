@@ -24,27 +24,40 @@ public class EmployeeService {
         .toEmployeeDto(employeeRepository.save(employeeMapper.toEmployee(employee)));
   }
 
-  public List<Employee> findAll() {
-    return employeeRepository.findAll();
+  public Employee create(Employee employee) {
+    return employeeRepository.save(employee);
   }
 
-  public Employee findById(Long id) {
-    return employeeRepository.findById(id).orElseThrow(
+//  public List<Employee> findAll() {
+//    return employeeRepository.findAll();
+//  }
+
+  public List<EmployeeDto> findAll() {
+    return employeeMapper.toEmployeeDtoList(employeeRepository.findAll());
+  }
+
+  public EmployeeDto findById(Long id) {
+    return employeeMapper.toEmployeeDto(employeeRepository.findById(id).orElseThrow(
         () -> new ResourceNotFoundException("Employee", "id", id)
-    );
+    ));
   }
 
   public EmployeeDto update(EmployeeDto updatedEmployeeDto) {
     Employee updatedEmployee = employeeMapper.toEmployee(updatedEmployeeDto);
-    Employee currentEmployee = findById(updatedEmployee.getId());
+    Employee currentEmployee = employeeMapper.toEmployee(findById(updatedEmployee.getId()));
     modelMapper.map(currentEmployee, updatedEmployee);
     employeeRepository.save(updatedEmployee);
     return employeeMapper.toEmployeeDto(updatedEmployee);
   }
 
   public ResponseEntity deleteById(Long id) {
+    findById(id);
     employeeRepository.deleteById(id);
     return ResponseEntity.ok().build();
+  }
+
+  public List<EmployeeDto> findByName(String name) {
+    return employeeMapper.toEmployeeDtoList(employeeRepository.findByName(name));
   }
 
 }

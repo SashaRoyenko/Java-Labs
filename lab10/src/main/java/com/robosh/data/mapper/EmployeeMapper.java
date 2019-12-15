@@ -13,9 +13,10 @@ import org.springframework.stereotype.Component;
 @Component
 public interface EmployeeMapper {
 
-  @Mappings({
-      @Mapping(source = "projectId", target = "project.id")
-  })
+//  @Mappings({
+////      @Mapping(source = "projectId", target = "project.id")
+//      @Mapping(source = "projectName", target = "project.name")
+//  })
   Employee toEmployee(EmployeeDto employeeDto);
 
   @InheritInverseConfiguration
