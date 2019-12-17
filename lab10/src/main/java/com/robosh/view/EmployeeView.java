@@ -2,8 +2,6 @@ package com.robosh.view;
 
 import com.robosh.components.EmployeeEditor;
 import com.robosh.data.dto.EmployeeDto;
-import com.robosh.data.entity.Employee;
-import com.robosh.data.entity.Project;
 import com.robosh.service.EmployeeService;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
@@ -13,7 +11,6 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.Route;
-import java.awt.PopupMenu;
 
 @Route
 public class EmployeeView extends VerticalLayout {
@@ -35,7 +32,7 @@ public class EmployeeView extends VerticalLayout {
     init();
   }
 
-  private void init(){
+  private void init() {
     filter.setPlaceholder("Type to filter");
     filter.setValueChangeMode(ValueChangeMode.EAGER);
     filter.addValueChangeListener(field -> fillList(field.getValue()));
@@ -47,7 +44,6 @@ public class EmployeeView extends VerticalLayout {
     employeeGrid.addColumn(EmployeeDto::getRole).setHeader("Role").setSortable(true);
     employeeGrid.addColumn(e -> e.getProject().getName()).setHeader("Project").setSortable(true);
     add(toolbar, this.employeeEditor, employeeGrid);
-
 
     employeeGrid
         .asSingleSelect()
@@ -62,6 +58,7 @@ public class EmployeeView extends VerticalLayout {
 
     fillList("");
   }
+
   private void fillList(String name) {
     if (name.isEmpty()) {
       employeeGrid.setItems(this.employeeService.findAll());
