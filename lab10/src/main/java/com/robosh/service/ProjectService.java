@@ -32,4 +32,8 @@ public class ProjectService {
     projectRepository.deleteById(id);
     return ResponseEntity.ok().build();
   }
+
+  public List<Project> findByName(String name) {
+    return projectRepository.findByName(name);
+  }
 }
