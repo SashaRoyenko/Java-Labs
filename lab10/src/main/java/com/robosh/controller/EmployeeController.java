@@ -22,7 +22,7 @@ public class EmployeeController {
   private EmployeeService employeeService;
 
   @GetMapping
-  public List<EmployeeDto> getAllEmployees() {
+  public List<Employee> getAllEmployees() {
     return employeeService.findAll();
   }
 
@@ -38,7 +38,7 @@ public class EmployeeController {
   }
 
   @PutMapping
-  public EmployeeDto updateEmployee(@Valid @RequestBody EmployeeDto employeeDto) {
+  public Employee updateEmployee(@Valid @RequestBody EmployeeDto employeeDto) {
     return employeeService.update(employeeDto);
   }
 

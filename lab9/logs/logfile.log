@@ -1,7 +1,48 @@
-WARN  | ADMIN | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
-WARN  | ADMIN | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
-INFO  | ADMIN | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
-INFO  | USER  | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
-ERROR | ADMIN | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
-WARN  | USER  | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
-ERROR | ADMIN | 2019-12-10 00:27:40  [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| ADMIN | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| ADMIN | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| ADMIN | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| ADMIN | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| ADMIN | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| ADMIN | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| USER | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| ADMIN | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| ADMIN | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| ADMIN | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| ADMIN | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| USER | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| ADMIN | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| USER | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| USER | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| ADMIN | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| USER | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| USER | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| USER | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| ADMIN | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| ADMIN | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message
+| ADMIN | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| ADMIN | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| USER | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| USER | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| USER | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| ADMIN | WARN | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:34) - Warn message
+| ADMIN | INFO | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:28) - Info message
+| ADMIN | ERROR | 2019-12-19 09:30:41 | [main] robosh.LoggerExample (LoggerExample.java:31) - Error message

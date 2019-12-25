@@ -7,7 +7,7 @@
     <!-- Console Appender -->
     <Console name="STDOUT" target="SYSTEM_OUT">
       <PatternLayout
-        pattern="%-5p | %-5marker | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n"/>
+        pattern="| %marker | %p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n"/>
     </Console>
 
     <!-- File Appender -->
@@ -17,7 +17,7 @@
       filePattern="${basePath}/logfile%i-%d{dd-MMM}.log"
       ignoreExceptions="false">
       <PatternLayout
-        pattern="%-5p | %-5marker | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n"/>
+        pattern="| %marker | %p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n"/>
       <Policies>
         <OnStartupTriggeringPolicy/>
         <TimeBasedTriggeringPolicy/>

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.robosh.data.entity.Project;
 import com.robosh.data.enums.Role;
 import java.time.LocalDate;
+import java.util.List;
 import javax.persistence.Enumerated;
 import javax.validation.constraints.NotBlank;
 import lombok.Data;
@@ -27,6 +28,6 @@ public class EmployeeDto {
 
 //  private String projectName;
 
-  private Project project;
+  private List<Project> project;
 
 }
